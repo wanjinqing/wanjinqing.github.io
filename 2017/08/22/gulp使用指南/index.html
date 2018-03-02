@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>gulp使用指南 | 前端工程师</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="gulp启动服务 gulpfile.js 内容如下12345678910111213141516var gulp = require(&apos;gulp&apos;);var connect = require(&apos;gulp-connect&apos;);gulp.task(&apos;server&apos;, function () &amp;#123;    connect.server(&amp;#123;        root: &apos;./&apos;,//pat">
+<meta property="og:type" content="article">
+<meta property="og:title" content="gulp使用指南">
+<meta property="og:url" content="https://wanjinqing.github.io/2017/08/22/gulp使用指南/index.html">
+<meta property="og:site_name" content="前端工程师">
+<meta property="og:description" content="gulp启动服务 gulpfile.js 内容如下12345678910111213141516var gulp = require(&apos;gulp&apos;);var connect = require(&apos;gulp-connect&apos;);gulp.task(&apos;server&apos;, function () &amp;#123;    connect.server(&amp;#123;        root: &apos;./&apos;,//pat">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-03-02T13:05:28.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="gulp使用指南">
+<meta name="twitter:description" content="gulp启动服务 gulpfile.js 内容如下12345678910111213141516var gulp = require(&apos;gulp&apos;);var connect = require(&apos;gulp-connect&apos;);gulp.task(&apos;server&apos;, function () &amp;#123;    connect.server(&amp;#123;        root: &apos;./&apos;,//pat">
+  
+    <link rel="alternate" href="/atom.xml" title="前端工程师" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer" class="outer">
+        <div id="header-title" class="inner">
+            <h1 id="logo-wrap">
+                <a href="/" id="logo">
+                    前端工程师
+                </a>
+            </h1>
+            
+                <h2 id="subtitle-wrap">
+                    <a href="/" id="subtitle">
+                        Knowledge is power.
+                    </a>
+                </h2>
+                
+        </div>
+        <div id="header-inner" class="inner">
+            <nav id="main-nav">
+                <a id="main-nav-toggle" class="nav-icon"></a>
+                
+                    <a class="main-nav-link" href="/">
+                        主页
+                    </a>
+                    
+                    <a class="main-nav-link" href="/archives">
+                        分类
+                    </a>
+                    
+            </nav>
+            <nav id="sub-nav">
+                <!-- 
+                    <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+                    
+                        <a id="nav-search-btn" class="nav-icon" title="搜索"></a> -->
+            </nav>
+            <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://wanjinqing.github.io"></form>
+            </div>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-gulp使用指南" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/22/gulp使用指南/" class="article-date">
+  <time datetime="2017-08-22T08:31:52.000Z" itemprop="datePublished">2017-08-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      gulp使用指南
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="gulp启动服务"><a href="#gulp启动服务" class="headerlink" title="gulp启动服务"></a>gulp启动服务</h3><ul>
+<li>gulpfile.js 内容如下<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">var gulp = require(<span class="string">'gulp'</span>);</span><br><span class="line">var connect = require(<span class="string">'gulp-connect'</span>);</span><br><span class="line">gulp.task(<span class="string">'server'</span>, <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">    connect.server(&#123;</span><br><span class="line">        root: <span class="string">'./'</span>,//path</span><br><span class="line">        host: <span class="string">'10.2.1.181'</span>,//ip</span><br><span class="line">        port: <span class="string">'8888'</span>,//端口</span><br><span class="line">        livereload: <span class="literal">true</span>,</span><br><span class="line">        middleware: <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">            <span class="built_in">return</span> [</span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br><span class="line">// 启动</span><br><span class="line">gulp.task(<span class="string">'default'</span>, [<span class="string">'server'</span>]);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="gulp之sass编译"><a href="#gulp之sass编译" class="headerlink" title="gulp之sass编译"></a>gulp之sass编译</h3><ul>
+<li>目录结构</li>
+</ul>
+<blockquote>
+<p><code>dist</code></p>
+<blockquote>
+<p><code>css</code></p>
+<blockquote>
+<p><code>style.css</code></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><code>scss</code></p>
+<blockquote>
+<p><code>style.scss</code></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><code>gulpfile.js</code></p>
+</blockquote>
+<ul>
+<li>gulpfile.js 内容如下<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">var gulp = require(<span class="string">'gulp'</span>);</span><br><span class="line">var sass = require(<span class="string">'gulp-sass'</span>);</span><br><span class="line">var cssmin = require(<span class="string">'gulp-minify-css'</span>);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">'sass'</span>, <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">    <span class="built_in">return</span> gulp.src(<span class="string">'scss/**/*.scss'</span>)</span><br><span class="line">    .pipe(sass())</span><br><span class="line">    .pipe(cssmin())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'dist/css'</span>))</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">'watch'</span>, <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">    gulp.watch(<span class="string">'scss/**/*.scss'</span>, [<span class="string">'sass'</span>]);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">'default'</span>, [<span class="string">'watch'</span>])</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="gulp之js压缩"><a href="#gulp之js压缩" class="headerlink" title="gulp之js压缩"></a>gulp之js压缩</h3><ul>
+<li>目录结构</li>
+</ul>
+<blockquote>
+<p><code>dist</code></p>
+<blockquote>
+<p><code>scripts</code></p>
+<blockquote>
+<p><code>all.js</code><br><code>all.min.js</code></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><code>scripts</code></p>
+<blockquote>
+<p><code>index.js</code><br><code>other.js</code></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><code>gulpfile.js</code></p>
+</blockquote>
+<ul>
+<li>gulpfile.js 内容如下<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">var gulp = require(<span class="string">'gulp'</span>);</span><br><span class="line">var uglify = require(<span class="string">'gulp-uglify'</span>);</span><br><span class="line"></span><br><span class="line">var concat = require(<span class="string">'gulp-concat'</span>);</span><br><span class="line">var rename = require(<span class="string">'gulp-rename'</span>);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">'scripts'</span>, <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">    //读取JS文件，合并，输出到新目录，重新命名，压缩，输出</span><br><span class="line">    <span class="built_in">return</span> gulp.src(<span class="string">'scripts/**/*.js'</span>)</span><br><span class="line">        .pipe(concat(<span class="string">'all.js'</span>))</span><br><span class="line">        .pipe(gulp.dest(<span class="string">'dist/scripts'</span>))</span><br><span class="line">        .pipe(rename(<span class="string">'all.min.js'</span>))</span><br><span class="line">        .pipe(uglify())</span><br><span class="line">        .pipe(gulp.dest(<span class="string">'dist/scripts'</span>));</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">'watch'</span>, <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">    gulp.watch(<span class="string">'scripts/**/*.js'</span>, [<span class="string">'scripts'</span>]);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">'default'</span>, [<span class="string">'watch'</span>])</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="gulp之图片压缩"><a href="#gulp之图片压缩" class="headerlink" title="gulp之图片压缩"></a>gulp之图片压缩</h3><ul>
+<li>目录结构</li>
+</ul>
+<blockquote>
+<p><code>dist</code></p>
+</blockquote>
+<blockquote>
+<p><code>source</code></p>
+<blockquote>
+<p><code>images</code></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><code>gulpfile.js</code></p>
+</blockquote>
+<ul>
+<li>gulpfile.js 内容如下<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var gulp = require(<span class="string">'gulp'</span>);</span><br><span class="line">var imagemin = require(<span class="string">'gulp-imagemin'</span>);</span><br><span class="line"></span><br><span class="line">//压缩图片</span><br><span class="line">gulp.task(<span class="string">'imgmin'</span>, <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">  <span class="built_in">return</span> gulp.src(<span class="string">'source/images/*'</span>)</span><br><span class="line">    .pipe(imagemin())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'dist'</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">'default'</span>, [<span class="string">'imgmin'</span>])</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://wanjinqing.github.io/2017/08/22/gulp使用指南/" data-id="cje9ykcia00026vvprzoec4g8" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/08/29/java入门/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          java入门
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/08/22/requirejs模块化开发/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">requirejs模块化开发</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">八月 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/09/02/git使用/">git使用</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/01/maven/">maven</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/30/java注解/">java注解</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/29/java集合/">java集合</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/29/java入门/">java入门</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 joker<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">主页</a>
+  
+    <a href="/archives" class="mobile-nav-link">分类</a>
+  
+</nav>
+    
+
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
+
+        <script src="/js/jquery.min.js"></script>
+
+            
+                <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+                    <script src="/fancybox/jquery.fancybox.pack.js"></script>
+                        
+
+                            <script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

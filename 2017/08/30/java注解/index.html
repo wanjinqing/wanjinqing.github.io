@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>java注解 | 前端工程师</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="JDK自带注解（编译时注解） @Override 重写父类的方法 @Deprecated 注解该方法已经过时 @Suppvisewarnings 当使用到@Deprecated注解的方法时，可忽略警告。  常见的第三方注解Spring 123@Autowired（运行时注解）@Service@Repository Mybatis 123@InsertProvider@UpdateProvider@">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java注解">
+<meta property="og:url" content="https://wanjinqing.github.io/2017/08/30/java注解/index.html">
+<meta property="og:site_name" content="前端工程师">
+<meta property="og:description" content="JDK自带注解（编译时注解） @Override 重写父类的方法 @Deprecated 注解该方法已经过时 @Suppvisewarnings 当使用到@Deprecated注解的方法时，可忽略警告。  常见的第三方注解Spring 123@Autowired（运行时注解）@Service@Repository Mybatis 123@InsertProvider@UpdateProvider@">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-03-02T13:05:28.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="java注解">
+<meta name="twitter:description" content="JDK自带注解（编译时注解） @Override 重写父类的方法 @Deprecated 注解该方法已经过时 @Suppvisewarnings 当使用到@Deprecated注解的方法时，可忽略警告。  常见的第三方注解Spring 123@Autowired（运行时注解）@Service@Repository Mybatis 123@InsertProvider@UpdateProvider@">
+  
+    <link rel="alternate" href="/atom.xml" title="前端工程师" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer" class="outer">
+        <div id="header-title" class="inner">
+            <h1 id="logo-wrap">
+                <a href="/" id="logo">
+                    前端工程师
+                </a>
+            </h1>
+            
+                <h2 id="subtitle-wrap">
+                    <a href="/" id="subtitle">
+                        Knowledge is power.
+                    </a>
+                </h2>
+                
+        </div>
+        <div id="header-inner" class="inner">
+            <nav id="main-nav">
+                <a id="main-nav-toggle" class="nav-icon"></a>
+                
+                    <a class="main-nav-link" href="/">
+                        主页
+                    </a>
+                    
+                    <a class="main-nav-link" href="/archives">
+                        分类
+                    </a>
+                    
+            </nav>
+            <nav id="sub-nav">
+                <!-- 
+                    <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+                    
+                        <a id="nav-search-btn" class="nav-icon" title="搜索"></a> -->
+            </nav>
+            <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://wanjinqing.github.io"></form>
+            </div>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-java注解" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/30/java注解/" class="article-date">
+  <time datetime="2017-08-30T11:59:17.000Z" itemprop="datePublished">2017-08-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      java注解
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="JDK自带注解（编译时注解）"><a href="#JDK自带注解（编译时注解）" class="headerlink" title="JDK自带注解（编译时注解）"></a>JDK自带注解（编译时注解）</h3><ol>
+<li>@Override 重写父类的方法</li>
+<li>@Deprecated 注解该方法已经过时</li>
+<li>@Suppvisewarnings 当使用到@Deprecated注解的方法时，可忽略警告。</li>
+</ol>
+<h3 id="常见的第三方注解"><a href="#常见的第三方注解" class="headerlink" title="常见的第三方注解"></a>常见的第三方注解</h3><p>Spring</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@Autowired（运行时注解）</span><br><span class="line">@Service</span><br><span class="line">@Repository</span><br></pre></td></tr></table></figure>
+<p>Mybatis</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@InsertProvider</span><br><span class="line">@UpdateProvider</span><br><span class="line">@Options</span><br></pre></td></tr></table></figure>
+<h3 id="注解的分类"><a href="#注解的分类" class="headerlink" title="注解的分类"></a>注解的分类</h3><ol>
+<li>按照运行机制分为</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">源码注解：注解只在源码中存在，编译成.class文件就不存在了。</span><br><span class="line">编译时注解：注解在源码和.class文件中都存在。</span><br><span class="line">运行时注解：在运行阶段还起作用，甚至会影响运行逻辑的注解。</span><br></pre></td></tr></table></figure>
+<ol>
+<li>按照来源</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">来自JDK的注解</span><br><span class="line">来自第三方的注解</span><br><span class="line">我们自己定义的注解</span><br></pre></td></tr></table></figure>
+<h3 id="自定义注解"><a href="#自定义注解" class="headerlink" title="自定义注解"></a>自定义注解</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//元注解</span><br><span class="line">@Target(&#123;ElementType.METHOD,ElementType.TYPE&#125;)// CONSTRUCTOR：构造方法声明, FIELD：字段声明, LOCAL_VARIABLE：局部变量声明, METHOD：方法声明, PACKAGE：包声明, PARAMETER：参数声明, TYPE：类接口</span><br><span class="line">@Retention(RetentionPolicy.RUNTTIME)// SOURCE, CLASS, RUNTIME</span><br><span class="line">@Inherited // 允许子类继承</span><br><span class="line">@Documented // 生成javadoc时会包含注解</span><br><span class="line">// 使用@interface关键字定义注解</span><br><span class="line">public @interface Description&#123;</span><br><span class="line">    // 成员类型是受限的，合法的类型包括原始类型，以及String,Class,Annotation,Enumeration</span><br><span class="line">    // 如果注解只有一个成员，则成员名必须取名为value(),在使用时可以忽略成员名和赋值号（=）。</span><br><span class="line">    String desc();// 成员以无参无异常方式声明</span><br><span class="line">    String author();</span><br><span class="line">    int age() default 18;// 可以用default为成员指定一个默认值</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">String value();</span><br></pre></td></tr></table></figure>
+<h3 id="使用自定义注解"><a href="#使用自定义注解" class="headerlink" title="使用自定义注解"></a>使用自定义注解</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@&lt;注解名\&gt;(&lt;成员名1&gt;=&lt;成员值1&gt;,&lt;成员名1&gt;=&lt;成员值1&gt;,...)</span><br><span class="line">@Description(desc=<span class="string">"I am eyeColor"</span>, author=<span class="string">"wang"</span>, age=25)</span><br><span class="line">public String eyeColor&#123;</span><br><span class="line">    <span class="built_in">return</span> <span class="string">"black"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@Description(<span class="string">"name"</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="解析注解"><a href="#解析注解" class="headerlink" title="解析注解"></a>解析注解</h3><p>概念：通过反射获取类、函数或成员上的运行时注解信息，从而实现动态控制程序运行的逻辑。</p>
+<p>Description.java<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">import java.lang.annotation.Documented;</span><br><span class="line">import java.lang.annotation.ElementType;</span><br><span class="line">import java.lang.annotation.Inherited;</span><br><span class="line">import java.lang.annotation.Retention;</span><br><span class="line">import java.lang.annotation.RetentionPolicy;</span><br><span class="line">import java.lang.annotation.Target;</span><br><span class="line"></span><br><span class="line">@Target(&#123;ElementType.METHOD, ElementType.TYPE&#125;)</span><br><span class="line">@Retention(RetentionPolicy.RUNTIME)</span><br><span class="line">@Inherited</span><br><span class="line">@Documented</span><br><span class="line">public @interface Description &#123;</span><br><span class="line">	</span><br><span class="line">    String desc();</span><br><span class="line"></span><br><span class="line">    String author();</span><br><span class="line"></span><br><span class="line">    int age() default 18;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Person.java</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">@Description(author = <span class="string">"Person"</span>, desc = <span class="string">" Class"</span>)</span><br><span class="line">public class Person &#123;</span><br><span class="line">	</span><br><span class="line">    @Description(author = <span class="string">"Person"</span>, desc = <span class="string">" name method"</span>)</span><br><span class="line">    public String <span class="function"><span class="title">name</span></span>()&#123;<span class="built_in">return</span> <span class="string">""</span>;&#125;</span><br><span class="line"></span><br><span class="line">    public int <span class="function"><span class="title">age</span></span>()&#123;<span class="built_in">return</span> 0;&#125;</span><br><span class="line"></span><br><span class="line">    @Deprecated</span><br><span class="line">    public void <span class="function"><span class="title">sing</span></span>()&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Child.java</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">//@Description(author = <span class="string">"Child"</span>, desc = <span class="string">" class"</span>)</span><br><span class="line">public class Child extends Person&#123;</span><br><span class="line">    @Override</span><br><span class="line">    @Description(author = <span class="string">"Child"</span>, desc = <span class="string">" name method"</span>)</span><br><span class="line">    public String <span class="function"><span class="title">name</span></span>() &#123;</span><br><span class="line">        // TODO Auto-generated method stub</span><br><span class="line">        <span class="built_in">return</span> null;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    @Description(author = <span class="string">"Child"</span>, desc = <span class="string">" age method"</span>)</span><br><span class="line">    public int <span class="function"><span class="title">age</span></span>() &#123;</span><br><span class="line">        // TODO Auto-generated method stub</span><br><span class="line">        <span class="built_in">return</span> 0;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void <span class="function"><span class="title">sing</span></span>() &#123;</span><br><span class="line">        // TODO Auto-generated method stub</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Parse.java</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">import java.lang.annotation.Annotation;</span><br><span class="line">import java.lang.reflect.Method;</span><br><span class="line"></span><br><span class="line">public class Parse &#123;</span><br><span class="line">public static void main (String[] args)&#123;</span><br><span class="line">    // 使用类加载器加载类</span><br><span class="line">    try &#123;</span><br><span class="line">        Class&lt;?&gt; class1 = Class.forName(<span class="string">"com.test.Child"</span>);</span><br><span class="line">        System.out.println(class1);</span><br><span class="line">        // 1.找到类上面的注解(判断该类上是否存在这个注解)</span><br><span class="line">        boolean isExist = class1.isAnnotationPresent(Description.class);</span><br><span class="line">        <span class="keyword">if</span> (isExist) &#123;</span><br><span class="line">            // 拿到注解实例</span><br><span class="line">            Description d = (Description)class1.getAnnotation(Description.class);</span><br><span class="line">            System.out.println(<span class="string">"类上面的注解:"</span>+d.author()+d.desc());</span><br><span class="line">        &#125;</span><br><span class="line">        // 2.找到方法上面的注解</span><br><span class="line">        Method[] methods = class1.getMethods();</span><br><span class="line">        <span class="keyword">for</span> (Method method: methods) &#123;</span><br><span class="line">            // 方式一</span><br><span class="line">            boolean isMExist = method.isAnnotationPresent(Description.class);</span><br><span class="line">            <span class="keyword">if</span> (isMExist) &#123;</span><br><span class="line">                // 拿到注解实例</span><br><span class="line">                Description d = (Description)method.getAnnotation(Description.class);</span><br><span class="line">                System.out.println(<span class="string">"方式一："</span>+d.author()+ d.desc());</span><br><span class="line">            &#125;</span><br><span class="line">            // 方式二</span><br><span class="line">            Annotation[] annotations = method.getAnnotations();</span><br><span class="line">            <span class="keyword">for</span> (Annotation annotation: annotations) &#123;</span><br><span class="line">                <span class="keyword">if</span> (annotation instanceof Description) &#123;</span><br><span class="line">                    Description description = (Description)annotation;</span><br><span class="line">                    System.out.println(<span class="string">"方式二："</span>+description.author()+ description.desc());</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; catch (ClassNotFoundException e) &#123;</span><br><span class="line">        // TODO Auto-generated catch block</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://wanjinqing.github.io/2017/08/30/java注解/" data-id="cje9ykcil00056vvp622tu63o" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/09/01/maven/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          maven
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/08/29/java集合/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">java集合</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">八月 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/09/02/git使用/">git使用</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/01/maven/">maven</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/30/java注解/">java注解</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/29/java集合/">java集合</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/29/java入门/">java入门</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 joker<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">主页</a>
+  
+    <a href="/archives" class="mobile-nav-link">分类</a>
+  
+</nav>
+    
+
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
+
+        <script src="/js/jquery.min.js"></script>
+
+            
+                <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+                    <script src="/fancybox/jquery.fancybox.pack.js"></script>
+                        
+
+                            <script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>java集合 | 前端工程师</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Collection And Map1Collections工具类是java集合框架中，用来操作集合对象的工具类，也是java集合框架的成员。 例子ListTest.java 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java集合">
+<meta property="og:url" content="https://wanjinqing.github.io/2017/08/29/java集合/index.html">
+<meta property="og:site_name" content="前端工程师">
+<meta property="og:description" content="Collection And Map1Collections工具类是java集合框架中，用来操作集合对象的工具类，也是java集合框架的成员。 例子ListTest.java 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-03-02T13:05:28.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="java集合">
+<meta name="twitter:description" content="Collection And Map1Collections工具类是java集合框架中，用来操作集合对象的工具类，也是java集合框架的成员。 例子ListTest.java 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606">
+  
+    <link rel="alternate" href="/atom.xml" title="前端工程师" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer" class="outer">
+        <div id="header-title" class="inner">
+            <h1 id="logo-wrap">
+                <a href="/" id="logo">
+                    前端工程师
+                </a>
+            </h1>
+            
+                <h2 id="subtitle-wrap">
+                    <a href="/" id="subtitle">
+                        Knowledge is power.
+                    </a>
+                </h2>
+                
+        </div>
+        <div id="header-inner" class="inner">
+            <nav id="main-nav">
+                <a id="main-nav-toggle" class="nav-icon"></a>
+                
+                    <a class="main-nav-link" href="/">
+                        主页
+                    </a>
+                    
+                    <a class="main-nav-link" href="/archives">
+                        分类
+                    </a>
+                    
+            </nav>
+            <nav id="sub-nav">
+                <!-- 
+                    <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+                    
+                        <a id="nav-search-btn" class="nav-icon" title="搜索"></a> -->
+            </nav>
+            <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://wanjinqing.github.io"></form>
+            </div>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-java集合" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/29/java集合/" class="article-date">
+  <time datetime="2017-08-29T08:13:50.000Z" itemprop="datePublished">2017-08-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      java集合
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Collection-And-Map"><a href="#Collection-And-Map" class="headerlink" title="Collection And Map"></a>Collection And Map</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Collections工具类是java集合框架中，用来操作集合对象的工具类，也是java集合框架的成员。</span><br></pre></td></tr></table></figure>
+<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><p>ListTest.java</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line">package collection_map;</span><br><span class="line">import java.util.ArrayList;</span><br><span class="line">import java.util.Arrays;</span><br><span class="line">import java.util.Iterator;</span><br><span class="line">import java.util.List;</span><br><span class="line"></span><br><span class="line">public class ListTest &#123;</span><br><span class="line"></span><br><span class="line">private List&lt;Course&gt; coursesToSelect;</span><br><span class="line">public <span class="function"><span class="title">ListTest</span></span>() &#123;</span><br><span class="line">    this.coursesToSelect = new ArrayList&lt;Course&gt;();</span><br><span class="line">&#125;</span><br><span class="line">public void <span class="function"><span class="title">testAdd</span></span>()&#123;</span><br><span class="line">    Course cr1 = new Course(<span class="string">"1"</span>, <span class="string">"one"</span>);</span><br><span class="line">    coursesToSelect.add(cr1);</span><br><span class="line">    Course cr2 = new Course(<span class="string">"2"</span>, <span class="string">"two"</span>);</span><br><span class="line">    coursesToSelect.add(0, cr2);		</span><br><span class="line">    Course[] courses = &#123;</span><br><span class="line">            new Course(<span class="string">"3"</span>, <span class="string">"three"</span>),</span><br><span class="line">            new Course(<span class="string">"4"</span>, <span class="string">"four"</span>)</span><br><span class="line">    &#125;;</span><br><span class="line">    coursesToSelect.addAll(Arrays.asList(courses));</span><br><span class="line">    Course[] courses2 = &#123;</span><br><span class="line">            new Course(<span class="string">"5"</span>, <span class="string">"five"</span>),</span><br><span class="line">            new Course(<span class="string">"6"</span>, <span class="string">"six"</span>)</span><br><span class="line">    &#125;;</span><br><span class="line">    coursesToSelect.addAll(2, Arrays.asList(courses2));</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">public void <span class="function"><span class="title">testGet</span></span> () &#123;</span><br><span class="line">    System.out.println(<span class="string">"for:"</span>);</span><br><span class="line">    <span class="keyword">for</span> (int i = 0; i &lt; coursesToSelect.size(); i++) &#123;</span><br><span class="line">        Course temp = (Course)coursesToSelect.get(i);</span><br><span class="line">        System.out.println(i + <span class="string">":"</span> + temp.getId() + <span class="string">"-"</span> + temp.getName());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">/**</span><br><span class="line">    * 迭代器</span><br><span class="line">    */</span><br><span class="line">public void <span class="function"><span class="title">testIterator</span></span> () &#123;</span><br><span class="line">    System.out.println(<span class="string">"\n迭代器:"</span>);</span><br><span class="line">    Iterator&lt;Course&gt; it = coursesToSelect.iterator();</span><br><span class="line">    <span class="keyword">while</span> (it.hasNext()) &#123;</span><br><span class="line">        Course course = (Course) it.next();</span><br><span class="line">        System.out.println(course.getId() + <span class="string">"-"</span> + course.getName());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">public void <span class="function"><span class="title">testForEach</span></span>() &#123;</span><br><span class="line">    System.out.println(<span class="string">"\nforEach:"</span>);</span><br><span class="line">    <span class="keyword">for</span> (Object obj: coursesToSelect) &#123;</span><br><span class="line">        Course course = (Course)obj;</span><br><span class="line">        System.out.println(course.getId() + <span class="string">"-"</span> + course.getName());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">public void <span class="function"><span class="title">testModify</span></span>() &#123;</span><br><span class="line">    coursesToSelect.set(4, new Course(<span class="string">"7"</span>, <span class="string">"seven"</span>));</span><br><span class="line">&#125;</span><br><span class="line">public void <span class="function"><span class="title">testRemove</span></span>() &#123;</span><br><span class="line">    Course course = coursesToSelect.get(4);</span><br><span class="line">    coursesToSelect.remove(course);</span><br><span class="line">    Course[] course2 = &#123;(Course)coursesToSelect.get(0)&#125;;</span><br><span class="line">    coursesToSelect.removeAll(Arrays.asList(course2));</span><br><span class="line">&#125;</span><br><span class="line">public static void main(String[] args) &#123;</span><br><span class="line">    ListTest <span class="built_in">test</span> = new ListTest();</span><br><span class="line">    test.testAdd();</span><br><span class="line">    test.testGet();</span><br><span class="line">    test.testModify();</span><br><span class="line">    test.testIterator();</span><br><span class="line">    test.testRemove();</span><br><span class="line">    test.testForEach();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Course.java</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">package collection_map;</span><br><span class="line"></span><br><span class="line">public class Course &#123;</span><br><span class="line">	private String id;</span><br><span class="line">	private String name;</span><br><span class="line">	public Course(String id, String name) &#123;</span><br><span class="line">		this.id = id;</span><br><span class="line">		this.name = name;</span><br><span class="line">	&#125;</span><br><span class="line">	public String <span class="function"><span class="title">getId</span></span>() &#123;</span><br><span class="line">		<span class="built_in">return</span> id;</span><br><span class="line">	&#125;</span><br><span class="line">	public void setId(String id) &#123;</span><br><span class="line">		this.id = id;</span><br><span class="line">	&#125;</span><br><span class="line">	public String <span class="function"><span class="title">getName</span></span>() &#123;</span><br><span class="line">		<span class="built_in">return</span> name;</span><br><span class="line">	&#125;</span><br><span class="line">	public void setName(String name) &#123;</span><br><span class="line">		this.name = name;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://wanjinqing.github.io/2017/08/29/java集合/" data-id="cje9ykcij00046vvphtb3d5lj" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/08/30/java注解/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          java注解
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/08/29/java入门/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">java入门</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">八月 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/09/02/git使用/">git使用</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/01/maven/">maven</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/30/java注解/">java注解</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/29/java集合/">java集合</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/29/java入门/">java入门</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 joker<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">主页</a>
+  
+    <a href="/archives" class="mobile-nav-link">分类</a>
+  
+</nav>
+    
+
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
+
+        <script src="/js/jquery.min.js"></script>
+
+            
+                <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+                    <script src="/fancybox/jquery.fancybox.pack.js"></script>
+                        
+
+                            <script src="/js/script.js"></script>
+  </div>
+</body>
+</html>
