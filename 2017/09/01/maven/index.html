@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>maven | 前端工程师</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="概述 maven是基于项目对象模型（POM），可以通过一小段信息来管理项目的构建、报告和文档的软件项目管理工具。  1234bin目录包含mvn的运行脚本boot目录包含一个类加载器的框架,maven使用该目录下的jar包来加载自己的类库conf是配置文件的目录lib目录下包含maven所有的类库和第三方类库 maven常用命令1234567mvn:-v 查看maven版本compile 编译te">
+<meta property="og:type" content="article">
+<meta property="og:title" content="maven">
+<meta property="og:url" content="https://wanjinqing.github.io/2017/09/01/maven/index.html">
+<meta property="og:site_name" content="前端工程师">
+<meta property="og:description" content="概述 maven是基于项目对象模型（POM），可以通过一小段信息来管理项目的构建、报告和文档的软件项目管理工具。  1234bin目录包含mvn的运行脚本boot目录包含一个类加载器的框架,maven使用该目录下的jar包来加载自己的类库conf是配置文件的目录lib目录下包含maven所有的类库和第三方类库 maven常用命令1234567mvn:-v 查看maven版本compile 编译te">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-03-02T13:05:28.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="maven">
+<meta name="twitter:description" content="概述 maven是基于项目对象模型（POM），可以通过一小段信息来管理项目的构建、报告和文档的软件项目管理工具。  1234bin目录包含mvn的运行脚本boot目录包含一个类加载器的框架,maven使用该目录下的jar包来加载自己的类库conf是配置文件的目录lib目录下包含maven所有的类库和第三方类库 maven常用命令1234567mvn:-v 查看maven版本compile 编译te">
+  
+    <link rel="alternate" href="/atom.xml" title="前端工程师" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer" class="outer">
+        <div id="header-title" class="inner">
+            <h1 id="logo-wrap">
+                <a href="/" id="logo">
+                    前端工程师
+                </a>
+            </h1>
+            
+                <h2 id="subtitle-wrap">
+                    <a href="/" id="subtitle">
+                        Knowledge is power.
+                    </a>
+                </h2>
+                
+        </div>
+        <div id="header-inner" class="inner">
+            <nav id="main-nav">
+                <a id="main-nav-toggle" class="nav-icon"></a>
+                
+                    <a class="main-nav-link" href="/">
+                        主页
+                    </a>
+                    
+                    <a class="main-nav-link" href="/archives">
+                        分类
+                    </a>
+                    
+            </nav>
+            <nav id="sub-nav">
+                <!-- 
+                    <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+                    
+                        <a id="nav-search-btn" class="nav-icon" title="搜索"></a> -->
+            </nav>
+            <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://wanjinqing.github.io"></form>
+            </div>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-maven" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/09/01/maven/" class="article-date">
+  <time datetime="2017-09-01T01:33:36.000Z" itemprop="datePublished">2017-09-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      maven
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><ul>
+<li>maven是基于项目对象模型（POM），可以通过一小段信息来管理项目的构建、报告和文档的软件项目管理工具。</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">bin目录包含mvn的运行脚本</span><br><span class="line">boot目录包含一个类加载器的框架,maven使用该目录下的jar包来加载自己的类库</span><br><span class="line">conf是配置文件的目录</span><br><span class="line">lib目录下包含maven所有的类库和第三方类库</span><br></pre></td></tr></table></figure>
+<h3 id="maven常用命令"><a href="#maven常用命令" class="headerlink" title="maven常用命令"></a>maven常用命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mvn:</span><br><span class="line">-v 查看maven版本</span><br><span class="line">compile 编译</span><br><span class="line"><span class="built_in">test</span> 测试</span><br><span class="line">package 打包</span><br><span class="line">clean 删除target</span><br><span class="line">install 安装jar包到本地仓库中</span><br></pre></td></tr></table></figure>
+<h3 id="maven-基础知识"><a href="#maven-基础知识" class="headerlink" title="maven 基础知识"></a>maven 基础知识</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">目录骨架：</span><br><span class="line">1.mvn archetype:generate 按照提示进行选择</span><br><span class="line">2.mvn archetype:generate -DgroupId=组织名，公司网址的反写+项目名</span><br><span class="line">-DartifactId=项目名-模块名</span><br><span class="line">-Dversion=版本号</span><br><span class="line">-Dpackage=代码所存在的包</span><br><span class="line"></span><br><span class="line">maven生命周期：</span><br><span class="line">1.clean 清理项目</span><br><span class="line">pre-clean 执行清理前的工作</span><br><span class="line">clean 清理上一次构建生成的所有文件</span><br><span class="line">post-clean 执行清理后的文件</span><br><span class="line"></span><br><span class="line">2.default 构建项目(核心)</span><br><span class="line">compile,<span class="built_in">test</span>,package,install</span><br><span class="line">运行package命令时，会依次执行compile,<span class="built_in">test</span>,package。</span><br><span class="line">运行<span class="built_in">test</span>命令时,会依次执行compile,<span class="built_in">test</span>。</span><br><span class="line"></span><br><span class="line">3.site 生成项目站点</span><br><span class="line">pre-site 在生成项目站点前要完成的工作</span><br><span class="line">site 生成项目的站点文档</span><br><span class="line">post-site 在生成项目站点后要完成的工作</span><br><span class="line">site-deploy 发布生成的站点到服务器上</span><br></pre></td></tr></table></figure>
+<h3 id="pom-xml常用元素介绍"><a href="#pom-xml常用元素介绍" class="headerlink" title="pom.xml常用元素介绍"></a>pom.xml常用元素介绍</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line">1.project:根元素，包含了pom的约束信息</span><br><span class="line">2.modelVersion：固定版本，指定了当前pom的版本</span><br><span class="line">3.坐标的信息：</span><br><span class="line">    groupId&lt;反写的公司网址+项目名&gt;</span><br><span class="line">    artifactId&lt;项目名+模块名&gt;</span><br><span class="line">    version&lt;大版本号.分支版本号.小版本号&gt; (snapshot快照，alpha内部测试，beta公测，release稳定，GA正式发布)</span><br><span class="line">    packaging&lt;打包方式：默认是jar，还有war,zip,pom&gt;</span><br><span class="line">4.name: 项目描述名</span><br><span class="line">5.url： 项目的地址</span><br><span class="line">6.description：项目的描述</span><br><span class="line">7.developers：开发人员列表</span><br><span class="line">8.licenses：许可证信息（开源框架）</span><br><span class="line">9.organization：组织信息</span><br><span class="line">10.依赖列表：</span><br><span class="line">    &lt;dependencies&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;&lt;/artifactId&gt;</span><br><span class="line">            &lt;version&gt;&lt;/version&gt;</span><br><span class="line">            &lt;<span class="built_in">type</span>&gt;&lt;/<span class="built_in">type</span>&gt;</span><br><span class="line">            &lt;scope&gt;&lt;/scope&gt;</span><br><span class="line">            &lt;!--设置依赖是否可选（<span class="literal">false</span>）--&gt;</span><br><span class="line">            &lt;optional&gt;&lt;/optional&gt;</span><br><span class="line">            &lt;!--排除依赖传递列表--&gt;</span><br><span class="line">            &lt;exclusions&gt;</span><br><span class="line">                &lt;exclusion&gt;&lt;/exclusion&gt;</span><br><span class="line">            &lt;/exclusions&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">    &lt;/dependencies&gt;</span><br><span class="line">11.依赖管理(不会被运行)(定义在父模块中，供子模块使用)</span><br><span class="line">    &lt;dependencyManagement&gt;</span><br><span class="line">        &lt;dependencies&gt;</span><br><span class="line">            &lt;dependency&gt;</span><br><span class="line">                &lt;groupId&gt;&lt;/groupId&gt;</span><br><span class="line">                &lt;artifactId&gt;&lt;/artifactId&gt;</span><br><span class="line">                &lt;version&gt;&lt;/version&gt;</span><br><span class="line">                &lt;<span class="built_in">type</span>&gt;&lt;/<span class="built_in">type</span>&gt;</span><br><span class="line">                &lt;scope&gt;&lt;/scope&gt;</span><br><span class="line">                &lt;!--设置依赖是否可选（<span class="literal">false</span>）--&gt;</span><br><span class="line">                &lt;optional&gt;&lt;/optional&gt;</span><br><span class="line">                &lt;!--排除依赖传递列表--&gt;</span><br><span class="line">                &lt;exclusions&gt;</span><br><span class="line">                    &lt;exclusion&gt;&lt;/exclusion&gt;</span><br><span class="line">                &lt;/exclusions&gt;</span><br><span class="line">            &lt;/dependency&gt;</span><br><span class="line">        &lt;/dependencies&gt;</span><br><span class="line">    &lt;/dependencyManagement&gt;</span><br><span class="line">12.通常为我们的构建行为提供相应的支持</span><br><span class="line">&lt;build&gt;</span><br><span class="line">    &lt;!--插件列表--&gt;</span><br><span class="line">    &lt;plugins&gt;</span><br><span class="line">        &lt;plugin&gt;</span><br><span class="line">            &lt;groupId&gt;&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;&lt;/artifactId&gt;</span><br><span class="line">            &lt;version&gt;&lt;/version&gt;</span><br><span class="line">        &lt;/plugin&gt;</span><br><span class="line">    &lt;/plugins&gt;</span><br><span class="line">&lt;/build&gt;</span><br><span class="line">13.parent:通常用于子模块对父模块的pom的继承</span><br><span class="line">14.用来聚合运行多个maven项</span><br><span class="line">    &lt;modules&gt;</span><br><span class="line">        &lt;module&gt;&lt;/module&gt;</span><br><span class="line">    &lt;/modules&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://wanjinqing.github.io/2017/09/01/maven/" data-id="cje9ye1n30005xcvpm5v0qg39" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/09/02/git使用/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          git使用
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/08/30/java注解/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">java注解</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">八月 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/09/02/git使用/">git使用</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/01/maven/">maven</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/30/java注解/">java注解</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/29/java集合/">java集合</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/29/java入门/">java入门</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 joker<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">主页</a>
+  
+    <a href="/archives" class="mobile-nav-link">分类</a>
+  
+</nav>
+    
+
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
+
+        <script src="/js/jquery.min.js"></script>
+
+            
+                <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+                    <script src="/fancybox/jquery.fancybox.pack.js"></script>
+                        
+
+                            <script src="/js/script.js"></script>
+  </div>
+</body>
+</html>
