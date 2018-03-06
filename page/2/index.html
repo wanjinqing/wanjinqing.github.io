@@ -3,19 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>git使用 | 前端工程师</title>
+  <title>前端工程师</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="git command123456789git clone address: 克隆一个仓库到本地git branch: 查看分支git branch childBranch: 新建分支git checkout childBranch: 切换分支git add .： 把我们要提交的文件信息添加到索引库中git commit -m message: 根据索引库中的内容来进行文件的提交git push">
-<meta property="og:type" content="article">
-<meta property="og:title" content="git使用">
-<meta property="og:url" content="https://wanjinqing.github.io/2017/09/02/git使用/index.html">
+  <meta name="description" content="front-end road">
+<meta property="og:type" content="website">
+<meta property="og:title" content="前端工程师">
+<meta property="og:url" content="https://wanjinqing.github.io/page/2/index.html">
 <meta property="og:site_name" content="前端工程师">
-<meta property="og:description" content="git command123456789git clone address: 克隆一个仓库到本地git branch: 查看分支git branch childBranch: 新建分支git checkout childBranch: 切换分支git add .： 把我们要提交的文件信息添加到索引库中git commit -m message: 根据索引库中的内容来进行文件的提交git push">
+<meta property="og:description" content="front-end road">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-03-02T13:05:28.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git使用">
-<meta name="twitter:description" content="git command123456789git clone address: 克隆一个仓库到本地git branch: 查看分支git branch childBranch: 新建分支git checkout childBranch: 切换分支git add .： 把我们要提交的文件信息添加到索引库中git commit -m message: 根据索引库中的内容来进行文件的提交git push">
+<meta name="twitter:title" content="前端工程师">
+<meta name="twitter:description" content="front-end road">
   
     <link rel="alternate" href="/atom.xml" title="前端工程师" type="application/atom+xml">
   
@@ -76,10 +75,12 @@
     </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-git使用" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main">
+  
+    <article id="post-arguments" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/09/02/git使用/" class="article-date">
-  <time datetime="2017-09-02T03:20:48.000Z" itemprop="datePublished">2017-09-02</time>
+    <a href="/2017/08/17/arguments/" class="article-date">
+  <time datetime="2017-08-17T01:52:13.000Z" itemprop="datePublished">2017-08-17</time>
 </a>
     
   </div>
@@ -89,8 +90,8 @@
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      git使用
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/17/arguments/">javaScript arguments对象</a>
     </h1>
   
 
@@ -98,40 +99,28 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="git-command"><a href="#git-command" class="headerlink" title="git command"></a>git command</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> address: 克隆一个仓库到本地</span><br><span class="line">git branch: 查看分支</span><br><span class="line">git branch childBranch: 新建分支</span><br><span class="line">git checkout childBranch: 切换分支</span><br><span class="line">git add .： 把我们要提交的文件信息添加到索引库中</span><br><span class="line">git commit -m message: 根据索引库中的内容来进行文件的提交</span><br><span class="line">git push --<span class="built_in">set</span>-upstream origin childBranch: 设置当前的分支跟踪远程的childBranch分支，以后可使用git push提交分支到childBranch。</span><br><span class="line">git push：提交分支到master（默认）.</span><br><span class="line">git merge branchName: 将branchName分支合并到当前分支</span><br></pre></td></tr></table></figure>
-
+        <h3 id="callee"><a href="#callee" class="headerlink" title="callee"></a>callee</h3><p>callee 属性是 arguments 对象的一个成员，他表示对函数对象本身的引用，这有利于匿名函数的递归或确保函数的封装性。callee拥有length属性，arguments.length是实参长度，arguments.callee.length是形参长度，由此能够判断调用时形参长度是否和实参长度一致。 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">inner</span></span> () &#123;</span><br><span class="line">    console.log(arguments.callee);// 指向拥有这个arguments对象的函数，即inner()</span><br><span class="line">    console.log(arguments.callee.caller);// 这个属性保存着调用当前函数的函数的引用,即outer()</span><br><span class="line">    console.log(inner.caller);// [Function: outer]</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">outer</span></span>()&#123;</span><br><span class="line">    inner();</span><br><span class="line">&#125;</span><br><span class="line">outer();</span><br></pre></td></tr></table></figure>
+<h3 id="形参与实参"><a href="#形参与实参" class="headerlink" title="形参与实参"></a>形参与实参</h3><p>形参和实参都有的情况下，它们的值会同步，否则它们的值不会同步。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> f(a, b, c)&#123;</span><br><span class="line">    c = <span class="string">'哈哈'</span>;</span><br><span class="line">    console.log(c) // 哈哈</span><br><span class="line">    console.log(arguments[2]); // undefined</span><br><span class="line">    arguments[2] = <span class="string">'joker'</span></span><br><span class="line">    console.log(c) // 哈哈</span><br><span class="line">    console.log(arguments[2]); // joker</span><br><span class="line">    </span><br><span class="line">    a = <span class="string">'哈哈'</span>;</span><br><span class="line">    console.log(a) // 哈哈</span><br><span class="line">    console.log(arguments[0]); // 哈哈</span><br><span class="line">    arguments[0] = <span class="string">'joker'</span></span><br><span class="line">    console.log(a) // joker</span><br><span class="line">    console.log(arguments[0]); // joker</span><br><span class="line">&#125;</span><br><span class="line">f(1, 2);</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://wanjinqing.github.io/2017/09/02/git使用/" data-id="cjeffemi70002zsvpugbef36e" class="article-share-link">Share</a>
+      <a data-url="https://wanjinqing.github.io/2017/08/17/arguments/" data-id="cjeffemi20001zsvp8t4rgr6u" class="article-share-link">Share</a>
       
       
     </footer>
   </div>
   
-    
-<nav id="article-nav">
-  
-    <a href="/2018/03/04/javascript中的原型链/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          javascript中的原型链
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2017/09/01/maven/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">maven</div>
-    </a>
-  
-</nav>
-
-  
 </article>
 
+
+  
+
+
+  <nav id="page-nav">
+    <a class="extend prev" rel="prev" href="/">&laquo; __('prev')</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
 </section>
         
           <aside id="sidebar">
